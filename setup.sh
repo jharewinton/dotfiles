@@ -6,7 +6,6 @@ cd ~/.dotfiles
 
 for df in \
 	.bash_profile \
-	.bashrc \
 	.gitconfig
 do
 		tput setaf 5; echo "Linking ${df}"; tput sgr0
@@ -55,6 +54,7 @@ brew install ripgrep
 brew install typesafe-activator
 brew install wget
 brew install yarn
+brew install mkdocs
 
 # Install editor plugins
 apm install \
@@ -72,6 +72,11 @@ minimap-cursorline
 pip install --upgrade pip
 pip install virtualenv
 pip install virtualenvwrapper
+
+# install gems
+gem install --pre asciidoctor-pdf
+gem install coderay pygments.rb
+gem install prism-marauder
 
 #################
 #OS X Preferences
